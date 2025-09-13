@@ -1,18 +1,13 @@
-# User's input of monthly income and expenses
+# Prompt user for input
+monthly_income = float(input('Enter your monthly income: '))
+monthly_expenses = float(input('Enter your total monthly expenses: '))
 
-monthlyIncome = int(input("Enter your monthly income: "))
-monthlyExpenses = int(input("Enter your total monthly expenses: "))
-
-# Calculate monthly savings
-
-monthlySavings = monthlyIncome - monthlyExpenses
+# Calculation of monthly savings
+monthly_savings = monthly_income - monthly_expenses
 
 # Project annual savings with 5% interest
-
-annualSavings = monthlySavings * 12
-projectedSavings = annualSavings + (annualSavings * 0.05)
+projected_savings = monthly_savings * 12 + (monthly_savings * 12 * 0.05)
 
 # Results
-
-print("Your monthly savings are:", monthlySavings)
-print("Your projected annual savings after 5% interest are:", projectedSavings)
+print(f'Your monthly savings are: ${monthly_savings}')
+print(f'Your projected annual savings after 5% interest are: ${projected_savings}')
