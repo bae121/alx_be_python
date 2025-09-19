@@ -1,4 +1,4 @@
-# User's sizing fo square pattern
+# User's sizing for square pattern
 size = int(input("Enter the size of the pattern: "))
 
 # Row counter
