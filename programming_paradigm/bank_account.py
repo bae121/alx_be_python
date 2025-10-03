@@ -2,18 +2,18 @@ class BankAccount:
     def __init__(self, initial_balance=0.0):
         self.__account_balance = initial_balance
 
-    def current_balance(self, amount):
-
 
     def deposit(self, amount):
         if amount > 0:
             self.__amount_balance += amount
+            print(f"Deposite: ${amount}")
 
     def withdraw(self, amount):
         if 0 < amount <= self.__account_balance:
             self.__account_balance -= amount
+            print(f"Withdraw: ${amount}")
             return True
-        
+        print("Insufficient funds")
         return False
     
     def display_balance(self):
